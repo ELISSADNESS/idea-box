@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+:root {
+  --bg-color: #110320;
+  --color: #FFFFFF;
+  --dark-gr: linear-gradient(135deg, #9000D4, #6F7DFC);
+  --light-gr: linear-gradient(135deg, #F4DCFF, #CED3FF);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,8 +17,13 @@
   }
 }
 
-body {
+* {
+  font-family: 'Inter', sans-serif;
+}
 
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
 }
 
 @layer utilities {
